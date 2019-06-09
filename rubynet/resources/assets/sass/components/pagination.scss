@@ -1,0 +1,63 @@
+$pagination-circular-size: 18px; // controls font and circle size
+$pagination-circular-color: $primary-color;
+$pagination-circular-disabled-color: $medium-gray;
+$pagination-circular-border-thickness: 1px;
+
+
+.pagination-circular li.current {
+  border: $pagination-circular-border-thickness solid $pagination-circular-color;
+  border-radius: 5000px;
+  padding: 0.285em 0.8em;
+  font-size: $pagination-circular-size;
+}
+
+.pagination-circular li.disabled {
+  border: $pagination-circular-border-thickness solid $pagination-circular-disabled-color;
+  padding: 0.285em 0.8em;
+  border-radius: 5000px;
+  font-size: $pagination-circular-size;
+}
+
+.pagination-circular a {
+  border-radius: 5000px;
+  padding: 0.285em 0.8em;
+  border: $pagination-circular-border-thickness solid $pagination-circular-color;
+  font-size: $pagination-circular-size;
+}
+
+.pagination-circular li a:hover {
+  background: $pagination-circular-color;
+  color: $white;
+}
+
+.pagination-circular li a {
+  transition: background 0.15s ease-in, color 0.15s ease-in;
+}
+
+.pagination-link.active {
+  background: $pagination-circular-color;
+  color: $white;
+}
+
+.pagination-link.active:hover{
+  cursor: default;
+}
+
+.pagination-circular li a[disabled=disabled]:not(.active) {
+  border: $pagination-circular-border-thickness solid $pagination-circular-disabled-color;
+  padding: 0.285em 0.8em;
+  border-radius: 5000px;
+  font-size: $pagination-circular-size;
+  background: $pagination-circular-disabled-color;
+  color: $light-gray;
+}
+
+.pagination-circular li a[disabled=disabled]:not(.active):hover {
+  cursor: default;
+  color: $light-gray;
+}
+
+.pagination{
+  margin-top:30px;
+}
+
