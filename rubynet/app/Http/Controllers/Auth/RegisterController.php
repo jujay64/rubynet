@@ -8,7 +8,7 @@ use App\User;
 use App\Department;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
-use Illuminate\Foundation\Auth\RegistersUsers;
+use App\Traits\RegistersUsers;
 
 class RegisterController extends Controller
 {

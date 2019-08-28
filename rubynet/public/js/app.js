@@ -111730,7 +111730,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "add-people-header" }, [
       _c("h6", { staticClass: "header-title" }, [
-        _vm._v("\r\n        Say 'Hi!' to Ruby's New Comers\r\n      ")
+        _vm._v("\r\n        Say 'Hello!' to Ruby's New Comers\r\n      ")
       ])
     ])
   },

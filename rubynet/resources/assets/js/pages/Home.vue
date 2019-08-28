@@ -9,7 +9,7 @@
   <div v-else-if ="newUsersLoadStatus == 2" class="people-you-might-know">
     <div class="add-people-header">
       <h6 class="header-title">
-        Say 'Hi!' to Ruby's New Comers
+        Say 'Hello!' to Ruby's New Comers
       </h6>
     </div>  
     <user v-for="user in newUsers.data" :key="user.identifier" :user="user" type="1"></user>
